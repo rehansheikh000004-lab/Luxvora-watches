@@ -179,3 +179,80 @@ body.light-mode .hero p{
     font-size:48px;
   }
 }
+
+/* WATCH COLLECTION */
+
+.collection{
+  padding:120px 8%;
+  text-align:center;
+  background:#111;
+}
+
+.collection h2{
+  font-family:'Cormorant Garamond',serif;
+  font-size:56px;
+  margin:20px 0 50px;
+}
+
+.watch-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:25px;
+}
+
+.watch-card{
+  padding:35px;
+  border-radius:25px;
+  background:linear-gradient(180deg,#1b1b1b,#0b0b0b);
+  border:1px solid rgba(212,175,55,.15);
+  transition:.4s;
+}
+
+.watch-card:hover{
+  transform:translateY(-10px);
+  border-color:#D4AF37;
+  box-shadow:0 20px 50px rgba(212,175,55,.25);
+}
+
+.watch-card span{
+  color:#D4AF37;
+  letter-spacing:2px;
+  font-size:12px;
+}
+
+.watch-card h3{
+  font-family:'Cormorant Garamond',serif;
+  font-size:34px;
+  margin:15px 0;
+}
+
+.watch-card p{
+  font-size:22px;
+  color:#fff;
+  margin-bottom:20px;
+}
+
+.small-btn{
+  display:inline-block;
+  padding:12px 24px;
+  border:1px solid #D4AF37;
+  border-radius:30px;
+  color:#D4AF37;
+  text-decoration:none;
+  transition:.3s;
+}
+
+.small-btn:hover{
+  background:#D4AF37;
+  color:#111;
+}
+
+@media(max-width:768px){
+  .watch-grid{
+    grid-template-columns:1fr;
+  }
+
+  .collection h2{
+    font-size:42px;
+  }
+}
