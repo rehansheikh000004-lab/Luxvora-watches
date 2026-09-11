@@ -77,3 +77,17 @@ document.querySelectorAll(".watch-card").forEach(card=>{
   });
 });
 
+/* FEATURED WATCH FLOAT ANIMATION */
+
+const watchImage = document.querySelector(".watch-image");
+
+let move = 1;
+
+setInterval(() => {
+  if (watchImage) {
+    watchImage.style.transform = `translateY(${move * 8}px)`;
+    watchImage.style.transition = "2s ease";
+    move *= -1;
+  }
+}, 2000);
+
