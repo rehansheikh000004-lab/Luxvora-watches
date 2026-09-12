@@ -152,3 +152,15 @@ setInterval(() => {
   }
 }
 
+/* GALLERY HOVER EFFECT */
+
+document.querySelectorAll(".gallery-card").forEach(card => {
+  card.addEventListener("mouseenter", () => {
+    card.style.filter = "brightness(1.1)";
+  });
+
+  card.addEventListener("mouseleave", () => {
+    card.style.filter = "brightness(1)";
+  });
+});
+
