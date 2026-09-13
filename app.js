@@ -164,3 +164,14 @@ document.querySelectorAll(".gallery-card").forEach(card => {
   });
 });
 
+/* AUTO TESTIMONIAL SLIDER */
+
+const reviews = document.querySelectorAll(".testimonial");
+let reviewIndex = 0;
+
+setInterval(() => {
+  reviews[reviewIndex].classList.remove("active");
+  reviewIndex = (reviewIndex + 1) % reviews.length;
+  reviews[reviewIndex].classList.add("active");
+}, 3500);
+
