@@ -175,3 +175,17 @@ setInterval(() => {
   reviews[reviewIndex].classList.add("active");
 }, 3500);
 
+/* CONTACT FORM */
+
+const form = document.getElementById("contactForm");
+const success = document.getElementById("successMessage");
+
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  success.textContent =
+    "✔ Thank you! Our Luxury Advisor will contact you shortly.";
+
+  form.reset();
+});
+
