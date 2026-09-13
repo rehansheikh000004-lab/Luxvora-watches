@@ -459,3 +459,78 @@ body.light-mode .hero p{
     font-size:40px;
   }
 }
+
+/* CONTACT */
+
+.contact{
+  padding:120px 8%;
+  text-align:center;
+  background:#0b0b0b;
+}
+
+.contact h2{
+  font-family:'Cormorant Garamond',serif;
+  font-size:54px;
+  margin:20px 0 40px;
+}
+
+.contact-form{
+  max-width:600px;
+  margin:auto;
+  display:flex;
+  flex-direction:column;
+  gap:18px;
+}
+
+.contact-form input,
+.contact-form textarea{
+  padding:18px;
+  border:1px solid rgba(212,175,55,.2);
+  border-radius:14px;
+  background:#181818;
+  color:white;
+}
+
+.whatsapp-btn{
+  display:inline-block;
+  margin-top:30px;
+  padding:15px 35px;
+  background:#25D366;
+  color:white;
+  text-decoration:none;
+  border-radius:40px;
+  font-weight:600;
+}
+
+.footer{
+  padding:70px 8%;
+  background:#000;
+  text-align:center;
+}
+
+.footer h2{
+  color:#D4AF37;
+  font-size:42px;
+  font-family:'Cormorant Garamond',serif;
+}
+
+.footer-links{
+  display:flex;
+  justify-content:center;
+  gap:25px;
+  margin:25px 0;
+}
+
+.footer-links a{
+  color:white;
+  text-decoration:none;
+}
+
+.footer-links a:hover{
+  color:#D4AF37;
+}
+
+#successMessage{
+  color:#D4AF37;
+  margin-top:10px;
+}
